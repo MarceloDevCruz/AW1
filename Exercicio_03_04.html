@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+     <html lang="pt-br">
+         <head>
+             <meta charset="utf-8"/>
+             <title> Formulário </title>
+         </head>
+         <body>
+             <form action="">
+                 <p><h3>Identificação do Usuário</h3></p>
+                 <p>Nome: <br>
+                     <input type="text" name="nome" size="50" maxlenght="50" required />
+                 </p>
+                 <p>Senha: <br>
+                     <input type="password" name="senha" size="50" maxlenght="25" required />
+                 </p>
+                 <p>CPF: <br>
+                     <input type="text" name="CPF" size="50" maxlenght="14" required />
+                 </p>
+                 <p>Sexo: <br>
+                     <input type="radio" name="sexo" value="Masculino" checked="checked" /> Masculino
+                     <input type="radio" name="sexo" value="Feminino" /> Feminino
+                 </p>
+                 <p>Data Nascimento:
+                     <input type="date" name="dataNascimento" required />
+                 </p>
+                 <p>Estado Civil:
+                     <input type="radio" name="estadoCivil" value="Casado" checked="checked" /> Casado
+                     <input type="radio" name="estadoCivil" value="Solteiro" /> Solteiro
+                     <input type="radio" name="estadoCivil" value="Divorciado" /> Divorciado
+                     <input type="radio" name="estadoCivil" value="Viúvo" /> Viúvo
+                 </p>
+                 <p>Escolaridade:
+                     <select name="Escolaridade">
+                         <option value="sem_escolaridade">Sem Escolaridade</option>
+                         <option value="fundamental_incompleto">Ensino Fundamental Incompleto</option>
+                         <option value="fundamental_completo">Ensino Fundamental Completo</option>
+                         <option value="medio_incompleto">Ensino Médio Incompleto</option>
+                         <option value="medio_completo">Ensino Médio Completo</option>
+                         <option value="superior_incompleto">Ensino Superior Incompleto</option>
+                         <option value="superior_completo">Ensino Superior Completo</option>
+                     </select>
+                 </p>
+                 <p>Ocupação Principal: <br>
+                     <input type="text" name="ocupacao" size="50" maxlength="50" />
+                 </p>
+                 <p>Renda Mensal: <br>
+                     <input type="number" name="renda" size="10" maxlength="8" />
+                 </p>
+                 <p>Número de Dependentes: <br>
+                     <input type="number" name="dependentes" size="5" maxlength="2" />
+                 </p>
+                 <p>Telefone: <br>
+                     <input type="tel" name="telefone" size="15" maxlength="15" required/>
+                 </p>
+                 <p>E-mail <br>
+                    <input type="email" name="email" size="40" maxlength="40" required /> 
+                 </p>
+                 <p><h3>Localização</h3></p>
+                 <p>Estado: <br>
+                     <input type="text" name="estado" size="30" maxlength="30" required/>
+                 </p>
+                 <p>Cidade: <br>
+                     <input type="text" name="cidade" size="30" maxlength="30" required/>
+                 </p>
+                 <p><h3>Mensagem do Usuário</h3></p>
+                 <p>Grau de Urgência:
+                     <select name="urgencia">
+                         <option value="urgente">Urgente</option>
+                         <option value="moderado">Moderado</option>
+                         <option value="sem_urgencia">Sem Urgência</option>
+                     </select>
+                 </p> 
+                 <p>Mensagem:</p>
+                     <textarea name="mensagem" cols="30" rows="6" required></textarea> <br>
+                      <input type="file"/> <br> <br>
+                      <input type="submit" name="enviar" value="Enviar" />
+                      <input type="reset" name="limpar" value="Limpar" />
+             </form>
+         </body>
+     </html>        

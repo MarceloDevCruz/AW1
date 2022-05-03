@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+     <html lang="pt-br">
+         <head>
+             <meta charset="utf-8"/>
+             <title> Formulário </title>
+         </head>
+         <body>
+             <form action="" method="post">
+                 <fieldset>
+                 <legend><h1>Registro de Usuário</h1></legend>
+                 <p>Nome: <br>
+                    <input type="text" name="nome" size="50" maxlenght="50" required />
+                 </p>
+                 <label for="senha_id">Senha </label> <br>
+                    <input type="password" name="senha" size="50" maxlenght="50" id="senha_id" required
+                    placeholder="Letras Maiusculo e minusculo números e chacacteres especiais" title="Ajuda" />
+                 </p>
+                 <p>E-mail: <br>
+                    <input type="email" name="email" size="50" maxlenght="50" required />
+                 </p>
+                 <p>Sexo: <br>
+                    <input type="radio" name="sexo" value="Masculino" checked="checked" /> Masculino
+                    <input type="radio" name="sexo" value="Feminino" /> Feminino
+                </p>
+                <p>Estado Civil:
+                    <input type="radio" name="estadoCivil" value="Casado" checked="checked" /> Casado
+                    <input type="radio" name="estadoCivil" value="Solteiro" /> Solteiro
+                    <input type="radio" name="estadoCivil" value="Divorciado" /> Divorciado
+                    <input type="radio" name="estadoCivil" value="Viúvo" /> Viúvo
+                </p>   
+                </fieldset> 
+             </form>
+
+         </body>
+     </html>        
